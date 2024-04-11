@@ -1,0 +1,3 @@
+Kubectl create ns helm-elastic
+
+helm install filebeat elastic/filebeat -n helm-elastic
