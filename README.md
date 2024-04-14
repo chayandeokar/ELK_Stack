@@ -8,10 +8,12 @@
 
 ## Each of these products plays a different role in delivering one seamless stack:
 
-E-Elasticsearch provides the storage and analytics engine
-L-Logstash acts as a collection and transformation agent
-K-Kibana helps you visualize the data that you have
-ELK stack provides centralized logging in order to identify problems with servers or applications.
+### E-Elasticsearch provides the storage and analytics engine
+### L-Logstash acts as a collection and transformation agent
+### K-Kibana helps you visualize the data that you have
+
+
+## ELK stack provides centralized logging in order to identify problems with servers or applications.
 
 It allows you to search all the logs in a single place.
 
