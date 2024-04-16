@@ -1,0 +1,10 @@
+{
+  "query": {
+    "match": {
+      "kubernetes.namespace_name.keyword": {
+        "query": "quesconsumer",
+        "type": "phrase"
+      }
+    }
+  }
+}
