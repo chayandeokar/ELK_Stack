@@ -1,0 +1,36 @@
+What is ELK stack?
+
+ELK stack is a combination of three open-source tools: Elasticsearch, Logstash, and Kibana. Elasticsearch is a distributed search and analytics engine, Logstash is a data processing pipeline, and Kibana is a visualization tool. Together, they form a powerful platform for log management and analytics.
+What is Elasticsearch and what is it used for?
+
+Elasticsearch is a distributed, RESTful search and analytics engine used for full-text search, log analytics, real-time analytics, and more. It provides near real-time search and analytics capabilities over large volumes of structured or unstructured data.
+What is Logstash and what role does it play in ELK stack?
+
+Logstash is a data processing pipeline that ingests, transforms, and enriches data before sending it to Elasticsearch for storage and analysis. It collects data from various sources, applies filters to parse and manipulate the data, and then outputs it to Elasticsearch or other destinations.
+How does Logstash handle data ingestion?
+
+Logstash uses input plugins to fetch data from sources like log files, databases, or message queues. It processes the data using filter plugins to parse, transform, and enrich it. Finally, it uses output plugins to send the processed data to Elasticsearch, Kafka, or other destinations.
+What is Kibana and what are its main features?
+
+Kibana is a data visualization and exploration tool for Elasticsearch. Its main features include interactive dashboards, visualizations (such as bar charts, pie charts, and maps), ad-hoc data analysis, and centralized logging management.
+Explain the indexing process in Elasticsearch.
+
+When data is indexed in Elasticsearch, it undergoes analysis, tokenization, and inverted indexing. Analysis involves breaking down text into individual terms (tokens). Tokenization splits text into tokens based on word boundaries or custom rules. Inverted indexing maps each term to the documents that contain it.
+How does Elasticsearch handle search queries?
+
+Elasticsearch distributes search queries across shards in a distributed manner. It uses a query DSL (Domain Specific Language) to specify queries, which can include full-text search, term queries, range queries, and more. Relevance scoring is based on TF-IDF (Term Frequency-Inverse Document Frequency), which measures how relevant a document is to a query.
+What are shards and replicas in Elasticsearch?
+
+Shards are the basic unit of scalability in Elasticsearch, representing a subset of data in an index. Elasticsearch distributes data across multiple shards for parallelism and scalability. Replicas are copies of shards used for redundancy and fault tolerance.
+How do you handle data backup and disaster recovery in ELK stack?
+
+Data backup in ELK stack can be achieved through snapshot and restore functionality provided by Elasticsearch. Snapshots capture the state of indices at a point in time, which can be stored in a repository. In case of disaster, snapshots can be restored to recover data.
+How do you monitor and optimize performance in ELK stack?
+
+Performance monitoring in ELK stack involves monitoring cluster health, resource usage, indexing throughput, query latency, and more. Optimization strategies include configuring shard allocation, index settings (such as refresh interval and merge policy), and query optimization (using filters, caching, etc.).
+What are some common challenges or limitations with ELK stack?
+
+Common challenges include resource-intensive indexing, managing large clusters, scalability limitations with certain types of queries, and securing the ELK stack against unauthorized access.
+Can you explain how you would set up security in ELK stack?
+
+Security in ELK stack can be implemented using features like authentication (with plugins like X-Pack Security), authorization (using role-based access control), encryption (for data in transit and at rest), and secure communication between components (using TLS/SSL). Additionally, access controls can be applied at the network level using firewalls and VPNs.
